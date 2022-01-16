@@ -23,6 +23,8 @@ jobs:
         with:
           commit-message: Update report
           token: ${{ secrets.PAT }}
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           branch: "docs/auto-update"
           delete-branch: true
           base: "main"
