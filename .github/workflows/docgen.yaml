@@ -21,7 +21,9 @@ jobs:
           version: "NVIM v0.6.0"
       - uses: peter-evans/create-pull-request@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update report
+          author: Github Action <action@users.noreply.github.com>
           branch: "docs/auto-update"
           delete-branch: true
           base: "main"
