@@ -1,6 +1,9 @@
 name: panvimdoc
 
-on: [push]
+on:
+  push:
+    branches:
+      - dev
 
 jobs:
   docs:
@@ -13,10 +16,17 @@ jobs:
         with:
           vimdoc: sidebar
           description: ""
-          pandoc: "doc/README.md"
+          pandoc: "doc/general.md"
           toc: true
           version: "NVIM v0.6.0"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "docs: auto generate docs"
-          branch: ${{ github.head_ref }}
+          branch: 'docs/auto-update'
+      - uses: peter-evans/create-pull-request@v3
+      - name: Open PR
+        with:
+          branch: "docs/auto-update"
+          delete-branch: true
+          base: "main"
+          title: '[docs]: Update documentation'
