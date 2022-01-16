@@ -1,5 +1,5 @@
 # Overview
-lolllllllllll
+lolllllllllll2
 A generic and modular lua sidebar inspired by [lualine](https://github.com/hoob3rt/lualine.nvim)
 
 # Installing
