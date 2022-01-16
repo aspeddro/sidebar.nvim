@@ -28,7 +28,7 @@ jobs:
           commit-message: "docs(gen): update"
           author: Github Action <action@users.noreply.github.com>
           branch: "docs/auto-update"
-          delete-branch: false
+          delete-branch: true
           base: "main"
           title: "docs(gen): update"
           body: |
