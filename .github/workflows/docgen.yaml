@@ -22,14 +22,7 @@ jobs:
           # Show Table of Content
           toc: true
           version: "NVIM v0.6.0"
-      - uses: peter-evans/create-pull-request@v3
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "docs(gen): update"
-          author: Github Action <action@users.noreply.github.com>
-          branch: "docs/auto-update"
-          delete-branch: true
-          base: "main"
-          title: "docs(gen): update"
-          body: |
-            Update documentation
+          commit_message: "docs(gen): update"
+          branch: ${{ github.head_ref }}
