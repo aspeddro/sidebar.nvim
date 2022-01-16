@@ -12,13 +12,6 @@ With [packer.nvim](https://github.com/wbthomason/packer.nvim)
 use 'sidebar-nvim/sidebar.nvim'
 ```
 
-With [vim-plug](https://github.com/junegunn/vim-plug)
-
-
-```vim
-Plug 'sidebar-nvim/sidebar.nvim'
-```
-
 # Setup
 
 Minimal setup:
