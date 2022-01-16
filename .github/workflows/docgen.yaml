@@ -26,6 +26,6 @@ jobs:
           push_options: "--force"
       - uses: peter-evans/create-pull-request@v3
         with:
-          branch: "main"
           delete-branch: true
+          base: "main"
           title: '[docs]: Update documentation'
