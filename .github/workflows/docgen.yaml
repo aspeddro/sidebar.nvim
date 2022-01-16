@@ -3,7 +3,7 @@ name: panvimdoc
 on:
   push:
     branches:
-      - dev
+      - test/workflow
 
 jobs:
   docs:
