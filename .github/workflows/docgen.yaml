@@ -25,5 +25,6 @@ jobs:
           version: "NVIM v0.6.0"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          add_options: '-u'
           commit_message: "docs(gen): update"
           branch: ${{ github.head_ref }}
