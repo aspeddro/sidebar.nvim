@@ -34,8 +34,6 @@ Table of Contents                                  *sidebar-table-of-contents*
 A generic and modular lua sidebar inspired by lualine
 <https://github.com/hoob3rt/lualine.nvim>
 
-Features:
-
 ==============================================================================
 2. Installing                                             *sidebar-installing*
 
