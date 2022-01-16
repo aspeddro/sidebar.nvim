@@ -348,15 +348,13 @@ Example configuration:
 
 ```lua
 require("sidebar-nvim").setup({
-    ...,
     datetime = {
         icon = "",
         format = "%a %b %d, %H:%M",
         clocks = {
             { name = "local" }
         }
-    },
-    ...
+    }
 })
 ```
 

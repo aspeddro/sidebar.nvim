@@ -1,4 +1,4 @@
-name: panvimdoc
+name: Generate Documentation
 
 on:
   push:
@@ -15,16 +15,21 @@ jobs:
         uses: kdheepak/panvimdoc@main
         with:
           vimdoc: sidebar
+          # Show Last Change on header
           description: ""
+          # Input file
           pandoc: "doc/general.md"
+          # Show Table of Content
           toc: true
           version: "NVIM v0.6.0"
       - uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update report
+          commit-message: "docs(gen): update"
           author: Github Action <action@users.noreply.github.com>
           branch: "docs/auto-update"
           delete-branch: true
           base: "main"
-          title: '[docs]: Update documentation'
+          title: "docs(gen): update"
+          body: |
+            Update documentation
