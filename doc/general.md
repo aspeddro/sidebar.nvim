@@ -2,8 +2,6 @@
 
 A generic and modular lua sidebar inspired by [lualine](https://github.com/hoob3rt/lualine.nvim)
 
-Features:
-
 # Installing
 
 You can install sidebar using any package manager.
