@@ -4,7 +4,7 @@ A generic and modular lua sidebar inspired by lualine
 
 # Installing
 
-You can install null-ls using any package manager.
+You can install sidebar using any package manager.
 
 With [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
